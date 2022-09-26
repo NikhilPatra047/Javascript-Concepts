@@ -42,6 +42,7 @@ console.log(map); //will return an empty map
 // map.keys() 
 // map.values()
 // map.entries()
+// map.forEach((value, key, map) => {})
 
 //let us use the same map that we created above
 let newMap = new Map([
@@ -64,6 +65,10 @@ for(let value of newMap.values()) {
 for(let entry of newMap.entries()) {
     console.log(entry);
 }
+
+newMap.forEach((value, key, map) => {
+    console.log(`${value}, ${key}`);
+});
 
 // ------------------------------------------------------------------------------------------------------------------------------
 // converting map into objects and vice-versa
@@ -88,4 +93,3 @@ console.log(obj2);
 
 let newMap2 = new Map(Object.entries(obj2));
 console.log(newMap2);
-
