@@ -1,21 +1,21 @@
 const ps = require('prompt-sync');
 const prompt = ps();
 
-//
+// Array Destructuring
 const arr = ["John", "Smith"];
 let [firstName, lastName] = arr;
 console.log(firstName);
 console.log(lastName);
 console.log(`--------------------------`);
 
-//
+// Spliting the string which then generates an array and assigning to the variables on the left
 let string = "John Smith";
 let [ first, last ] = string.split(" "); //Splits the string by the given parameter and generates an array of remaining elements
 console.log(first);
 console.log(last);
 console.log(`--------------------------`);
 
-//
+// Objects as assignables while destructuring an array
 let user = {};
 
 [user.name, user.surname] = "John Smith".split(' ');
@@ -25,7 +25,7 @@ console.log(user.surname);
 console.log(user);
 console.log(`--------------------------`);
 
-//
+// Array destructuring while iterating over a map
 let map = new Map();
 map.set("name", "John");
 map.set("age", "30");
